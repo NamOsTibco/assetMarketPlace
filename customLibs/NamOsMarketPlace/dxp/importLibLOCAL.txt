@@ -1,0 +1,23 @@
+<script name="Asset Controller" src="http://localhost:8888/spotfireFramework/assetMarketPlace/customLibs/NamOsMarketPlace/assetController.js" />
+
+<basehtml name="NamosMarketPlace HTML" src="http://localhost:8888/spotfireFramework/assetMarketPlace/customLibs/NamOsMarketPlace/namos-rotating-card.html" />
+
+<script name="JSVIZ" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/jsviz/lib/JSViz/JSViz.js" />
+
+<script name="JVizIntrospectionJS" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/jsviz/lib/JSViz/Introspection.js" />
+
+<style name="Bootstrap CSS" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/bootstrap/bootstrap.css" />
+
+<script name="Angular" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/angular/1.1.1/angular.min.js" />
+
+<style name="Namos Rotating Card" src="http://localhost:8888/spotfireFramework/assetMarketPlace/customLibs/NamOsMarketPlace/namos-rotating-card.css" />
+
+<script name="Bootstrap" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/bootstrap/bootstrap.min.js" />
+
+<script name="JQuery" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/jquery/jquery-3.2.1.min.js" />
+
+<script name="Platform" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/platform.js-master/platform.js" />
+
+<script name="namosMarketPlace" src="http://localhost:8888/spotfireFramework/assetMarketPlace/customLibs/NamOsMarketPlace/namosMarketPlace.js" />
+
+<style name="Bootstrap 3 CSS" src="http://localhost:8888/spotfireFramework/assetMarketPlace/externalLibs/bootstrap/v3.0.2/bootstrap.css" />

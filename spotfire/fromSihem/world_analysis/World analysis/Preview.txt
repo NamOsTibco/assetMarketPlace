@@ -1,2 +1,0 @@
-A quick overview of the essential 
-visualization concepts in Spotfire
