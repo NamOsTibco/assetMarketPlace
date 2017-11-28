@@ -1,0 +1,30 @@
+<script name="Asset Controller" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/assetController.js" />
+
+<basehtml name="NamosMarketPlace HTML" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/namos-rotating-card.html" />
+
+<script name="JSVIZ" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/jsviz/lib/JSViz/JSViz.js" />
+
+<script name="JQuery 3.2.1" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/jquery/jquery-3.2.1.min.js" />
+
+<basehtml name="Application Menu HTML" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/application/applicationMenu.html" />
+
+<script name="JVizIntrospectionJS" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/jsviz/lib/JSViz/Introspection.js" />
+
+<style name="Bootstrap CSS" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/bootstrap/bootstrap.css" />
+
+<script name="Angular" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/angular/1.1.1/angular.min.js" />
+
+<script name="Bootstrap" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/bootstrap/bootstrap.min.js" />
+
+<script name="JQuery" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/jquery/jquery-3.2.1.min.js" />
+
+<script name="Platform" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/platform.js-master/platform.js" />
+
+<script name="namosMarketPlace" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/namosMarketPlace.js" />
+
+<style name="Namos Rotating Card CSS" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/namos-rotating-card.css" />
+
+<basehtml name="Application index HTML" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/NamOsMarketPlace/application/applicationIndexSpotfire.html" />
+
+<style name="Bootstrap 3 CSS" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/externalLibs/bootstrap/v3.0.2/bootstrap.css" />
+
