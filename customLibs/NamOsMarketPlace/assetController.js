@@ -2,6 +2,7 @@ var hostName = "172.31.17.83";
 
 
 var tciApiBaseUrl = "https://eu-west-1.integration.cloud.tibcoapps.com:443/sm5q2ml2hdharerbhmr6i2mawodtciri";
+var repoBaseUrl = "https://s3-eu-west-1.amazonaws.com/asset-market-place-repo/assets/";
 var liveAppsSandbox = "31";
 
 //var hostName = "localhost";
@@ -40,15 +41,19 @@ function assetController($scope, $http) {
 		
 		$scope.ngExecute = function (asset) {
 			console.log("***********************EXECUTE asset : " + JSON.stringify(asset));
-			var implementationFileFullUrl = tciApiBaseUrl + "/getAssetFile?caseRef=" + asset.caseReference + "&sandBox="  + liveAppsSandbox  + "&fileName=" + asset.ImplementationFile;
+			
 			//alert(implementationFileFullUrl);
 			
+			
+			
 			if (asset.ImplementationType == "PYTHON") {
-				console.log("EXECUTE PYTHON SCRIPT : " + implementationFileFullUrl);
-				execScript(implementationFileFullUrl);
+				var implementationFileFullUrlPython = tciApiBaseUrl + "/getAssetFile?caseRef=" + asset.caseReference + "&sandBox="  + liveAppsSandbox  + "&fileName=" + asset.ImplementationFile;
+				console.log("EXECUTE PYTHON SCRIPT : " + implementationFileFullUrlPython);
+				execScript(implementationFileFullUrlPython);
 			} else if (asset.ImplementationType == "STYLE") {
-				console.log("EXECUTE STYLE SCRIPT : " + implementationFileFullUrl);
-				changeStyle(implementationFileFullUrl);
+				var implementationFileFullUrlCss = repoBaseUrl + asset.caseReference + "/" + asset.ImplementationFile;
+				console.log("EXECUTE STYLE SCRIPT : " + implementationFileFullUrlCss);
+				changeStyle(implementationFileFullUrlCss);
 			}
 			
 			
