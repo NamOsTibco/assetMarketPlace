@@ -16,7 +16,7 @@ from Spotfire.Dxp.Data import DataColumn
 #baseUrl="http://localhost:8888/spotfireFramework/assetMarketPlace"
 
 # Baseurl when using from cloud
-baseUrl="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/assetMarketPlace"
+baseUrl="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources"
 
 
 newPage = Document.Pages.AddNew()
