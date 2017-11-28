@@ -17,6 +17,12 @@ from Spotfire.Dxp.Data import PersistentDataView
 from Spotfire.Dxp.Data import DataColumn
 
 
+# Baseurl when using locally
+#baseUrl="http://localhost:8888/spotfireFramework/assetMarketPlace"
+
+# Baseurl when using from cloud
+baseUrl="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources"
+
 
 #
 # PAGE INTRO ====================================================================================
@@ -40,31 +46,31 @@ cr = Document.CustomNodes.AddNewIfNeeded[ContentRepository]()
 
 # Create a Linked Content Item
 name = "Application index HTML"
-url = "http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/application/applicationIndexSpotfire.html"
+url = baseUrl + "/customLibs/NamOsMarketPlace/application/applicationIndexSpotfire.html"
 urlReference = UrlReference ( name, url, None, ContentType.HTML,False )
 cr[name]= urlReference
 
 # Create a Linked Content Item
 name = "Bootstrap CSS"
-url = "http://localhost:8888/spotfireFramework/externalLibs/bootstrap/bootstrap.css"
+url = baseUrl + "/externalLibs/bootstrap/bootstrap.css"
 urlReference = UrlReference ( name, url, None, ContentType.CSS,False )
 cr[name]= urlReference
 
 # Create a Linked Content Item
 name = "JSVIZ"
-url = "http://localhost:8888/spotfireFramework/externalLibs/jsviz/lib/JSViz/JSViz.js"
+url = baseUrl + "/externalLibs/jsviz/lib/JSViz/JSViz.js"
 urlReference = UrlReference ( name, url, None, ContentType.JS,False )
 cr[name]= urlReference
 
 # Create a Linked Content Item
 name = "JQuery"
-url = "http://localhost:8888/spotfireFramework/externalLibs/jquery/jquery-3.2.1.min.js"
+url = baseUrl + "/externalLibs/jquery/jquery-3.2.1.min.js"
 urlReference = UrlReference ( name, url, None, ContentType.JS,False )
 cr[name]= urlReference
 
 # Create a Linked Content Item
 name = "JVizIntrospectionJS"
-url = "http://localhost:8888/spotfireFramework/externalLibs/jsviz/lib/JSViz/Introspection.js"
+url = baseUrl + "/externalLibs/jsviz/lib/JSViz/Introspection.js"
 urlReference = UrlReference ( name, url, None, ContentType.JS,False )
 cr[name]= urlReference
 
