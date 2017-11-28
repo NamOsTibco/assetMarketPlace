@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>c9a420d5-2a6e-4a29-8f07-839b24fcfc57</id>
+  <name>JSViz Core Package</name>
+  <version>3.4.0.5</version>
+  <intendedClient>Core</intendedClient>
+  <assemblies>
+    <assembly>
+      <fullname>SpotfirePS.Framework.JSVisualization, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513</fullname>
+      <codebase>SpotfirePS.Framework.JSVisualization.dll</codebase>
+      <compatibility>
+        <min-version>1.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+    <assembly>
+      <fullname>Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed</fullname>
+      <codebase>Newtonsoft.Json.dll</codebase>
+      <compatibility>
+        <min-version>7.0.0.0</min-version>
+        <max-version>7.0.0.0</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+  <extensions>
+    <addIn fullTypeName="SpotfirePS.Framework.JSVisualization.JSVisualizationAddIn, SpotfirePS.Framework.JSVisualization, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" />
+  </extensions>
+</module>

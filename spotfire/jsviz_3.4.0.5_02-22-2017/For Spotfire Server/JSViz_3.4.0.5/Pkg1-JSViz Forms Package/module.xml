@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>25e58af4-6634-4d86-98e2-4ec2f6a8e0df</id>
+  <name>JSViz Forms Package</name>
+  <version>3.4.0.5</version>
+  <intendedClient>Forms</intendedClient>
+  <assemblies>
+    <assembly>
+      <fullname>ScintillaNET, Version=2.5.2.0, Culture=neutral, PublicKeyToken=948d6c9751444115</fullname>
+      <codebase>Libs\ScintillaNET.dll</codebase>
+      <compatibility>
+        <min-version>2.5.2.0</min-version>
+        <max-version>2.5.2.0</max-version>
+      </compatibility>
+    </assembly>
+    <assembly>
+      <fullname>SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513</fullname>
+      <codebase>SpotfirePS.Framework.JSVisualizationForms.dll</codebase>
+      <compatibility>
+        <min-version>1.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+    <assembly>
+      <fullname>Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed</fullname>
+      <codebase>Newtonsoft.Json.dll</codebase>
+      <compatibility>
+        <min-version>7.0.0.0</min-version>
+        <max-version>7.0.0.0</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+  <extensions>
+    <addIn fullTypeName="SpotfirePS.Framework.JSVisualizationForms.JSVisualizationFormsAddIn, SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" />
+  </extensions>
+  <resources>
+    <publicResource name="SpotfirePS.Framework.JSVisualizationForms.Scilexer" relativePath="Libs\SciLexer.dll" />
+    <publicResource name="SpotfirePS.Framework.JSVisualizationForms.Scilexer64" relativePath="Libs\SciLexer64.dll" />
+  </resources>
+</module>

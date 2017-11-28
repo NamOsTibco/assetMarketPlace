@@ -1,0 +1,169 @@
+<script name="JSVIZ" src="http://localhost:8888/jsviz/lib/JSViz/JSViz.js" />
+
+<script name="NamOsCytoscapeJS" src="http://localhost:8888/jsviz/src/namos/cytoscape/namosCytoscape.js" />
+
+<script name="JVizIntrospectionJS" src="http://localhost:8888/jsviz/lib/JSViz/Introspection.js" />
+
+<script name="CytoscapeMin" src="http://localhost:8888/jsviz/src/namos/cytoscape/cytoscape.min.js" />
+
+<script name="JQuery" src="http://localhost:8888/jsviz/src/namos/jquery/jquery-3.2.1.min.js" />
+
+<style name="NamosCytoscapeCss" src="http://localhost:8888/jsviz/src/namos/cytoscape/namosCytoscape.css" />
+
+
+
+
+
+
+
+
+<script name="JSVIZ" src="http://localhost:8888/jsviz/lib/JSViz/JSViz.js" />
+
+<script name="visJS" src="http://localhost:8888/jsviz/src/namos/visTimeline/vis.js" />
+
+<script name="JVizIntrospectionJS" src="http://localhost:8888/jsviz/lib/JSViz/Introspection.js" />
+
+<script name="visNamos" src="http://localhost:8888/jsviz/src/namos/visTimeline/namosVisTimeline.js" />
+
+<script name="JQuery" src="http://localhost:8888/jsviz/src/namos/jquery/jquery-3.2.1.min.js" />
+
+<style name="visTimelineGraph2dCss" src="http://localhost:8888/jsviz/src/namos/visTimeline/vis-timeline-graph2d.min.css" />
+<style name="visTimelineCss" src="http://localhost:8888/jsviz/src/namos/visTimeline/visTimeline.css" />
+
+
+
+TO refresh: 
+
+Ctrl-Alt-Shift-F5
+
+TO debug
+
+Ctrl-Alt-Shift-F12
+
+USE MACRO EXPRESS
+!!> alt + D
+!!> alt + F
+
+
+runScript ( &quot;tree_control_click&quot;, [{ &quot;Key&quot;:&quot;paramNodeText&quot;, &quot;Value&quot;: nodeid }] );
+
+
+
+
+Couleurplus forte :> Case Phase state change
+
+COUleur marketing
+
+
+
+
+
+
+
+
+ATTENTION CREATE spotifire extension : 
+
+!>https://community.tibco.com/wiki/one-click-jsviz-visualizations-extending-jsviz-tibco-spotfirer
+
+Install visual studio
+
+Downlaod and get Spotfire develloper SDK from edelivery
+
+
+file:///C:/DaZone/install/SpotFireDevelopper/TIB_sfire_dev_7.10.0_documents/doc/html/TIBCO%20Spotfire%20Developer%20Documentation/GUID-42D787B1-E0E4-4A42-9229-96FB9CFB0EC5.html?local=true&nav=toc
+
+
+
+ADD PACKAGE 
+C:\Program Files (x86)\TIBCO\Spotfire\7.9.0\Modules
+
+
+C:\DaZone\bin\apache-tomcat-9.0.0.M26\webapps\spotfireFramework\spotfire\extension\spotfireps.configuredjsviz_0\JSViz Forms Package_3.4.0.9
+C:\DaZone\bin\apache-tomcat-9.0.0.M26\webapps\spotfireFramework\spotfire\extension\spotfireps.configuredjsviz_0\JSViz Logging Package_3.4.0.9
+C:\DaZone\bin\apache-tomcat-9.0.0.M26\webapps\spotfireFramework\spotfire\extension\spotfireps.configuredjsviz_0\JSViz Core Package_3.4.0.9
+
+BECAREFULL TO CHECK THE MISSING JSVISUALISAION
+
+C:\DaZone\bin\apache-tomcat-9.0.0.M26\webapps\spotfireFramework\spotfire\extension\SpotfireSEG.visTimelineJSViz\SpotfireSEG.visTimelineJSViz\SpotfireSEG.visTimelineJSViz
+
+
+
+TO allow templates
+
+http://www.dnnsoftware.com/docs/developers/creating-modules/start-vs-project-with-templates.html
+
+
+
+
+
+
+
+
+Spotfire JSViz live view integration Mark Reilly
+Dave Leigh
+
+
+
+Good extension for Visual Studio
+https://www.jetbrains.com/resharper/
+
+
+Spotfire 
+TOOLS!> properties! > tool option !> show develop !> get refresh
+
+
+WIDTH CHANGE 
+
+https://community.tibco.com/wiki/whats-new-tibco-spotfire#toc-39
+
+
+
+
+Market place 
+from Andrew Berridge to Nam Ton That (privately):
+https://exchange.ai/
+
+
+POUR LE CODE HTML 
+https://codebeautify.org/string-builder
+faire un replace ' + ' par \r\n apres dans notepad
+
+
+
+IL EXISTE SPOTFIRE PAORTABLE
+
+
+
+
+
+
+
+
+
+
+!!!!> Script !> ajouter un HTML AREA !> avec le code
+
+___> Ajouter des données dans la VizTimeLine /> bien mettre la ou il faut
+!§§§> de meme pour le graph
+
+
+
+
+!!!!!!! POST IT  ______!!!!!!!
+
+
+
+VOIR SI ON PEUT AVOIR UN BOUTON QUI ENLEVE LES DETAILS 
+
+Helper de reset !> 
+
+Vertical !!>
+
+ANalyse client 
+Application deja rempli
+
+
+AjOUT ER text dans HMTL content !!!> ou le remplacer par un graph
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+	<title>JS Visualization Tester</title>
+</head>
+
+<body>
+    <script>var proClient = true;</script>
+
+    <!--
+      Place JS and CSS Includes here - uncomment as required
+     -->
+
+	<script type="text/javascript" src="http://localhost/jsviz/lib/jQuery/jQuery.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/d3/d3.layout.cloud.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/JSViz/Introspection.js"></script>
+    <!--
+	 -->
+
+    <!--
+      Place JS and CSS for chart being tested here - uncomment as required
+     -->
+
+    <!--
+    <link   type="text/css"       href="http://localhost/jsviz/src/css/WordCloud.css" rel="stylesheet" >
+	 -->
+	<script type="text/javascript" src="http://localhost/jsviz/src/js/WordCloud.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/JSViz/JSViz.js"></script>
+
+    <!--
+      This button mimics the call to the renderCore method.
+     -->
+
+    <br>
+    <button onclick="call_renderCore()">Call renderCore()</button>
+
+     <!--
+      This text area is to assist with debugging
+      Use the Introspection routines to display object details in this box
+	 -->
+
+    <br>
+    <textarea id="ta1" rows="20" cols="100"></textarea>
+
+    <!--
+      This <DIV> mimics the one created by the JS Visualization Plugin
+     -->
+
+    <div style='position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;' onmousedown= 'if (typeof mark === "undefined") {} else {mark(event)}' id="js_chart" />
+
+    <script>
+    function call_renderCore()
+    {
+        /*
+        Paste in the JSON data copied to the clipboard from within your JS Visualization instance
+	     */
+
+	    var sfdata = {"columns":["First([Words])","Sum([Frequency])"],"baseTableHints":{ "rows":393, "visible":99, "marked":0, "tableName":"Words", "settingName":"Words"},"data":[{"items":["absence",1], "hints":{"index": 0 }}, {"items":["advantage",1], "hints":{"index": 1 }}, {"items":["anything",1], "hints":{"index": 2 }}, {"items":["anything.",1], "hints":{"index": 3 }}, {"items":["Apparently",1], "hints":{"index": 4 }}, {"items":["around",1], "hints":{"index": 5 }}, {"items":["because",4], "hints":{"index": 6 }}, {"items":["better",4], "hints":{"index": 7 }}, {"items":["boards.",1], "hints":{"index": 8 }}, {"items":["books.",1], "hints":{"index": 9 }}, {"items":["cannot",1], "hints":{"index": 10 }}, {"items":["careful",1], "hints":{"index": 11 }}, {"items":["carries",1], "hints":{"index": 12 }}, {"items":["climate",1], "hints":{"index": 13 }}, {"items":["closed",1], "hints":{"index": 14 }}, {"items":["company.",1], "hints":{"index": 15 }}, {"items":["Congress;",1], "hints":{"index": 16 }}, {"items":["conscience:",1], "hints":{"index": 17 }}, {"items":["copyright",1], "hints":{"index": 18 }}, {"items":["country",1], "hints":{"index": 19 }}, {"items":["Courage",1], "hints":{"index": 20 }}, {"items":["crushed",1], "hints":{"index": 21 }}, {"items":["deserves",1], "hints":{"index": 22 }}, {"items":["distort",1], "hints":{"index": 23 }}, {"items":["doesn\u0027t",1], "hints":{"index": 24 }}, {"items":["doubt.",4], "hints":{"index": 25 }}, {"items":["easiest",1], "hints":{"index": 26 }}, {"items":["exaggerated.",1], "hints":{"index": 27 }}, {"items":["fiction",1], "hints":{"index": 28 }}, {"items":["Fiction",1], "hints":{"index": 29 }}, {"items":["first.",1], "hints":{"index": 30 }}, {"items":["follows",1], "hints":{"index": 31 }}, {"items":["Forgiveness",1], "hints":{"index": 32 }}, {"items":["fragrance",1], "hints":{"index": 33 }}, {"items":["friends",1], "hints":{"index": 34 }}, {"items":["Giving",1], "hints":{"index": 35 }}, {"items":["government",1], "hints":{"index": 36 }}, {"items":["greatly",1], "hints":{"index": 37 }}, {"items":["happen",1], "hints":{"index": 38 }}, {"items":["health",1], "hints":{"index": 39 }}, {"items":["Heaven",1], "hints":{"index": 40 }}, {"items":["idiots.",1], "hints":{"index": 41 }}, {"items":["impossible",1], "hints":{"index": 42 }}, {"items":["isn\u0027t.",1], "hints":{"index": 43 }}, {"items":["Kindness",1], "hints":{"index": 44 }}, {"items":["language",1], "hints":{"index": 45 }}, {"items":["learns",1], "hints":{"index": 46 }}, {"items":["living.",1], "hints":{"index": 47 }}, {"items":["majority",1], "hints":{"index": 48 }}, {"items":["mastery",1], "hints":{"index": 49 }}, {"items":["matter.",4], "hints":{"index": 50 }}, {"items":["member",1], "hints":{"index": 51 }}, {"items":["misprint.",1], "hints":{"index": 52 }}, {"items":["myself.",1], "hints":{"index": 53 }}, {"items":["nothing",1], "hints":{"index": 54 }}, {"items":["nothing.",1], "hints":{"index": 55 }}, {"items":["obliged",1], "hints":{"index": 56 }}, {"items":["Patriotism",1], "hints":{"index": 57 }}, {"items":["people",1], "hints":{"index": 58 }}, {"items":["person",1], "hints":{"index": 59 }}, {"items":["planet.",1], "hints":{"index": 60 }}, {"items":["please.",1], "hints":{"index": 61 }}, {"items":["poured.",1], "hints":{"index": 62 }}, {"items":["practice.",1], "hints":{"index": 63 }}, {"items":["prepared",1], "hints":{"index": 64 }}, {"items":["reading",1], "hints":{"index": 65 }}, {"items":["reflect.",1], "hints":{"index": 66 }}, {"items":["remain",1], "hints":{"index": 67 }}, {"items":["remember",1], "hints":{"index": 68 }}, {"items":["remove",4], "hints":{"index": 69 }}, {"items":["repeat",1], "hints":{"index": 70 }}, {"items":["reports",1], "hints":{"index": 71 }}, {"items":["resistance",1], "hints":{"index": 72 }}, {"items":["saying",1], "hints":{"index": 73 }}, {"items":["school",1], "hints":{"index": 74 }}, {"items":["silent",1], "hints":{"index": 75 }}, {"items":["sleepy",1], "hints":{"index": 76 }}, {"items":["smoking",1], "hints":{"index": 77 }}, {"items":["something",1], "hints":{"index": 78 }}, {"items":["stored",1], "hints":{"index": 79 }}, {"items":["stranger",1], "hints":{"index": 80 }}, {"items":["String",1], "hints":{"index": 81 }}, {"items":["supporting",1], "hints":{"index": 82 }}, {"items":["suppose",1], "hints":{"index": 83 }}, {"items":["Suppose",1], "hints":{"index": 84 }}, {"items":["thought",1], "hints":{"index": 85 }}, {"items":["thousands",1], "hints":{"index": 86 }}, {"items":["times.",1], "hints":{"index": 87 }}, {"items":["today.",1], "hints":{"index": 88 }}, {"items":["vessel",1], "hints":{"index": 89 }}, {"items":["violet",1], "hints":{"index": 90 }}, {"items":["Whenever",1], "hints":{"index": 91 }}, {"items":["world.",1], "hints":{"index": 92 }}, {"items":["yourself",1], "hints":{"index": 93 }}],"additionalTables":[],"user":"spotfireadmin","static":false,"wait":2,"runtime":{},"legend":true, "config": {}}
+
+        renderCore ( sfdata );
+
+        display_data ( sfdata );
+    }
+
+    function display_data ( sfdata )
+    {
+        if (typeof introspect == 'function') {
+            document.getElementById("ta1").innerText = introspect ( "Data: \n\n", sfdata );
+        }
+    }
+</script>
+</body>

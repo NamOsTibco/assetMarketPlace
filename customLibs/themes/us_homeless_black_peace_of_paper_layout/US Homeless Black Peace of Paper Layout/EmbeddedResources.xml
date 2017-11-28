@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<EmbeddedResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="1.0">
+  <EmbeddedResource Id="0" ArchiveElementPath="EmbeddedResources/0.emb" Name="DataBufferCache" />
+  <EmbeddedResource Id="1" ArchiveElementPath="EmbeddedResources/1.emb" Name="Map Marking" />
+  <EmbeddedResource Id="2" ArchiveElementPath="EmbeddedResources/2.emb" Name="Marking (2)" />
+  <EmbeddedResource Id="3" ArchiveElementPath="EmbeddedResources/3.emb" Name="Cross Table Marking" />
+  <EmbeddedResource Id="4" ArchiveElementPath="EmbeddedResources/4.emb" Name="Marking (4)" />
+  <EmbeddedResource Id="5" ArchiveElementPath="EmbeddedResources/5.emb" Name="BarChartMarking" />
+  <EmbeddedResource Id="6" ArchiveElementPath="EmbeddedResources/6.emb" Name="EmbeddedScripts.xml" />
+  <EmbeddedResource Id="7" ArchiveElementPath="EmbeddedResources/7.emb" Name="CustomStyles.json" />
+</EmbeddedResources>

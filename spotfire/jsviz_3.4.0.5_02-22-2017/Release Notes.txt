@@ -1,0 +1,97 @@
+JSVIZ 2017 - February 22nd 2017.  Build Number: 3.4.0.5
+
+Change Notes
+
+* New: Added support for creating configured visualizations using JSViz
+       This allows the creation of visualizations that appear with their own toolbar and
+       do not require users to setup the JavaScript files.
+
+* Fixed: The absence of a Marking routine no longer causes a JavaScript exception.
+
+*******************************************************************************************
+
+JSVIZ 2016 - November 7th 2016.  Build Number: 3.4.0.4
+
+* Fixed: Changing location of logfile now works as expected
+
+* Fixed: HTML Inclusions now allow use of Web Player URL and Document Property substitutions
+
+*******************************************************************************************
+
+JSVIZ 2016 - July 4th 2016.  Build Number: 3.4.0.3
+
+* New: Added support for Custom HTML Template
+* New sample: doughnutchartcustomhtml.dxp shows simple HTML Table Template
+* Fixed: Incompatibility with Spotfire 7.6 (removed log4net.dll from JSViz distribution)
+         Note: Requires Spotfire 7.6 Hotfix 3 or greater to be installed
+
+
+*******************************************************************************************
+
+JSVIZ 2016 - February 23rd 2016.  Build Number: 3.4.0.1
+
+Change Notes
+
+* Fixed: Issue with crash if Marking removed while in use
+* Fixed: Difference in behavior between JSViz and Spotfire when
+         multiple markings are being used, one of them is empty and
+         "Show All Items when Limiting Marking(s) Empty" is checked 
+
+
+*******************************************************************************************
+
+JSVIZ 2016 - January 29th 2016.  Build Number: 3.4.0.0
+
+Change Notes
+
+* New: Supports Spotfire 7.5 JavaScript API and use of Chromium Embedded Browser in Spotfire Analyst
+* New: Added support for multiple data tables
+* New: Configuration Parameters now formatted and validated after editing
+* New: Added dialog for inserting Document Property placeholders into Configuration Parameters
+* New: Re-factored samples to use single JSViz.js file for all boilerplate code
+
+
+*******************************************************************************************
+
+JSVIZ HF2 - October 27th 2014.  Build Number: 1.0.8107.6549
+
+Change Notes
+
+* New: Added logging capability
+* New: Added the ability to update visualization configuration from JavaScript
+
+* New sample: doughnutchartwithconfig.dxp shows configuration and logging features
+* New sample: d3gauges.dxp shows gauges with d3 library
+* New sample: horizonchart.dxp shows Horizon Chart with d3 library
+* New sample: venndiagram.dxp shows venn diagrams with d3 library
+* New sample: rotatingworld.dxp shows decoupling of JavaScript events from Spotfire
+
+* New: Samples shipped as embedded where possible to allow offline use
+
+* Known Issue: Using bookmarks with a visualization containing JSViz (or any custom visualization) causes a crash
+               This has been resolved in Spotfire 6.0.1 Hotfix 9 and Spotfire 6.5.1 Hotfix 4
+
+*******************************************************************************************
+
+JSVIZ HF1 - April 28th 2014.  Build Number: 1.0.7517.7596
+
+Change Notes
+
+* Fixed: Issue with changing filtering scheme selection
+* Fixed: Issue with exporting plot images and titles when multiple JSViz present on the same page
+* Fixed: Max waiting seconds in Export Property Page increased to 600
+* Fixed: Config parameter edit area now accepts return without closing dialog
+* Fixed: Issue with JSON to clipboard for single unaggregated column configuration
+* Fixed: Issue with marking hints not being set when all items are marked
+* Fixed: Issue with limit by marking not taking immediate effect when selected
+* Fixed: Issue with embedded content editing not immediatly reflecting in visualization when performing configuration in desktop client
+* Fixed: Issues with crashing when Data Table columns renamed or removed
+
+* New: Added the ability to set Document Properties from within JS code
+* New: Added the ability to pass Document Properties in the JSON configuration block - %%DocProp.MyProp%%
+
+* Known Issue: Current iPad app incorrectly expands JSViz (any custom visualization) to occupy whole screen
+
+*******************************************************************************************
+
+JSVIZ Original Release - Oct 5th 2013.  Build Number: 1.0.6905.8090 

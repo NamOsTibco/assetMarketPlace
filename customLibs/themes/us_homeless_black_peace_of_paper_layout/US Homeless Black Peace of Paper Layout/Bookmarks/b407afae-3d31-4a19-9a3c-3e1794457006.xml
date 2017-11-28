@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Bookmark Name="Two Maps" Id="b407afae-3d31-4a19-9a3c-3e1794457006" IsPublic="false" Modified="2015-03-18T16:56:06.3182298" Author="sfadmin">
+  <ActivePage>
+    <Page Id="c107568b-4023-4fcb-bce8-93a6dcda9e15" Title="Dashboard" />
+  </ActivePage>
+  <ActiveVisual>
+    <Visual Id="e850f101-666a-431d-8a43-e8c8e0b77bc7">
+      <Page Id="c107568b-4023-4fcb-bce8-93a6dcda9e15" Title="Dashboard" />
+    </Visual>
+  </ActiveVisual>
+  <PageConfiguration>
+    <Page Id="c107568b-4023-4fcb-bce8-93a6dcda9e15" Title="Dashboard" />
+    <VisualizationAreaSize FitToWindow="True" Width="0" Height="0" />
+    <Visuals>
+      <Visual Title="Population Counts" TypeId="Spotfire.LineChart">
+        <Visual Id="4635ed87-2e5b-4e60-96e4-274f533a5eee" />
+        <SerializedGraph HashCode="307580CB81D274A6E4118A2CF248A69993343292">
+          <Context>
+            <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+            <DataFilteringSelection Id="3d288099-0170-4df4-a680-85eed44fa7f3" Name="Filtering scheme" />
+            <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+            <DataMarkingSelection Id="2a56cf53-5846-481b-bcd1-6d37644e79e2" Name="Cross Table Marking" />
+            <DataColumn v="2" Name="YEAR_LABEL" ExternalName="YEAR_LABEL" DataType="String">
+              <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+            </DataColumn>
+            <DataColumn v="2" Name="TOT_POP" ExternalName="TOT_POP" DataType="Integer">
+              <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+            </DataColumn>
+          </Context>
+        </SerializedGraph>
+      </Visual>
+      <Visual Title="Shelters (Total Beds)" ShowTitle="false" TypeId="Spotfire.WebMapChart">
+        <Visual Id="3431d9b1-0e8f-462f-8047-941000ea10b4" />
+        <SerializedGraph HashCode="1AF794E4A218D5AE639297533D4EDF7C43EE8975">
+          <Context>
+            <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            <DataFilteringSelection Id="3d288099-0170-4df4-a680-85eed44fa7f3" Name="Filtering scheme" />
+            <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+            <ColumnRelation LeftExpression="[HIC.Shelters].[State]" RightExpression="[USA States].[State FIPS alpha]" />
+            <ColumnRelation LeftExpression="[HIC.Shelters].[State]" RightExpression="[USA Counties].[State FIPS alpha]" />
+            <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            <DataColumn v="2" Name="Beds" ExternalName="Beds" DataType="Integer">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="State FIPS alpha" ExternalName="State FIPS alpha" DataType="String">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataColumn v="2" Name="State" ExternalName="State" DataType="String">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataColumn v="2" Name="Geometry" ExternalName="Geometry" DataType="Binary">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataColumn v="2" Name="Bed Utilization Rate by State" DataType="Real">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            <DataColumn v="2" Name="StateAndCounty" DataType="String">
+              <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            </DataColumn>
+            <DataColumn v="2" Name="Geometry" ExternalName="Geometry" DataType="Binary">
+              <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            </DataColumn>
+            <DataColumn v="2" Name="Bed Utilization Rate by County" DataType="Real">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="Beds Surplus / Deficit" DataType="Real">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="State" ExternalName="State" ExternalIdentifier="9284fffe-33c6-452d-b57f-54af0828a842" DataType="String">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="XCenter (2)" ExternalName="XCenter (2)" DataType="Real">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataColumn v="2" Name="YCenter (2)" ExternalName="YCenter (2)" DataType="Real">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+          </Context>
+        </SerializedGraph>
+      </Visual>
+      <Visual Title="Text Area" ShowTitle="false" TypeId="Spotfire.HtmlTextArea">
+        <Visual Id="9da79c4f-bf9b-462e-a74a-82610b23b956" />
+      </Visual>
+      <Visual Title="${AutoTitle}" TypeId="Spotfire.CrossTable">
+        <Visual Id="7c589e64-d028-4aef-9a8f-f8a21223aa11" />
+        <SerializedGraph HashCode="A2040AA5EA8BA1D3CFB1D94921E8F92246712C33">
+          <Context>
+            <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            <DataFilteringSelection Id="3d288099-0170-4df4-a680-85eed44fa7f3" Name="Filtering scheme" />
+            <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+            <DataFilteringSelection Id="92700305-e1ba-43b0-994e-45ae0a21da5f" Name="Cross Tab Filtering" />
+            <DataMarkingSelection Id="2a56cf53-5846-481b-bcd1-6d37644e79e2" Name="Cross Table Marking" />
+            <DataColumn v="2" Name="County" ExternalName="County" DataType="String">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="State" ExternalName="State" ExternalIdentifier="9284fffe-33c6-452d-b57f-54af0828a842" DataType="String">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="Beds_perCoC_perYear" DataType="Real">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="Homeless_perCoC_perYear" ExternalName="Homeless_perCoC_perYear" DataType="Real">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+          </Context>
+        </SerializedGraph>
+      </Visual>
+      <Visual Title="People at Risk (Total Homeless)" ShowTitle="false" TypeId="Spotfire.WebMapChart">
+        <Visual Id="e850f101-666a-431d-8a43-e8c8e0b77bc7" />
+        <SerializedGraph HashCode="3472B1D12A8F1235898162EA5BC11ADEB9F35B17">
+          <Context>
+            <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            <DataFilteringSelection Id="3d288099-0170-4df4-a680-85eed44fa7f3" Name="Filtering scheme" />
+            <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+            <DataColumn v="2" Name="Homeless" ExternalName="Homeless" DataType="Integer">
+              <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+            </DataColumn>
+            <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+            <DataColumn v="2" Name="State FIPS alpha" ExternalName="State FIPS alpha" DataType="String">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataColumn v="2" Name="Geometry" ExternalName="Geometry" DataType="Binary">
+              <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+            </DataColumn>
+            <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            <DataColumn v="2" Name="County" ExternalName="County" DataType="String">
+              <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            </DataColumn>
+            <DataColumn v="2" Name="Geometry" ExternalName="Geometry" DataType="Binary">
+              <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+            </DataColumn>
+          </Context>
+        </SerializedGraph>
+      </Visual>
+      <Visual Title="Filter Data in Cross Tab" TypeId="Spotfire.HtmlTextArea">
+        <Visual Id="a71f3612-4361-4970-91e0-103f7b272007" />
+      </Visual>
+      <Visual Title="${AutoTitle}" TypeId="Spotfire.BarChart">
+        <Visual Id="74298e15-a0a0-4bef-bff4-1671d54bf7ac" />
+        <SerializedGraph HashCode="84B66E97DE6A60BC24F12688C2A84CE730F74E41">
+          <Context>
+            <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+            <DataFilteringSelection Id="92700305-e1ba-43b0-994e-45ae0a21da5f" Name="Cross Tab Filtering" />
+            <DataMarkingSelection Id="2a56cf53-5846-481b-bcd1-6d37644e79e2" Name="Cross Table Marking" />
+            <DataMarkingSelection Id="f7914ff3-40a2-4451-83d6-716f68e38bff" Name="Marking (4)" />
+            <DataColumn v="2" Name="Shelter Type Label" ExternalName="Shelter Type Label" DataType="String">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+            <DataColumn v="2" Name="Beds" ExternalName="Beds" DataType="Integer">
+              <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+            </DataColumn>
+          </Context>
+        </SerializedGraph>
+      </Visual>
+    </Visuals>
+    <VisualPanels>
+      <VisualPanel RelativeBounds="0;56433;50539;43567" />
+      <VisualPanel RelativeBounds="0;7957;50539;48473" />
+      <VisualPanel RelativeBounds="0;0;100000;7954" />
+      <VisualPanel RelativeBounds="50542;56433;39372;21460" />
+      <VisualPanel RelativeBounds="50542;7957;49458;48473" />
+      <VisualPanel RelativeBounds="89917;56433;10083;43567" />
+      <VisualPanel RelativeBounds="50542;77896;39372;22104" />
+    </VisualPanels>
+    <Splitters>
+      <Splitter Orientation="Horizontal" RelativeBounds="0;56430;50539;3">
+        <Controls Visuals="1" />
+        <Controls Visuals="0" />
+      </Splitter>
+      <Splitter Orientation="Vertical" RelativeBounds="50539;7957;3;48473">
+        <Controls Visuals="1" />
+        <Controls Visuals="4" />
+      </Splitter>
+      <Splitter Orientation="Horizontal" RelativeBounds="0;7954;100000;3">
+        <Controls Visuals="2" />
+        <Controls Visuals="1;4" Splitters="1" />
+      </Splitter>
+      <Splitter Orientation="Vertical" RelativeBounds="89914;56433;3;43567">
+        <Controls Visuals="3;6" Splitters="4" />
+        <Controls Visuals="5" />
+      </Splitter>
+      <Splitter Orientation="Horizontal" RelativeBounds="50542;77893;39372;3">
+        <Controls Visuals="3" />
+        <Controls Visuals="6" />
+      </Splitter>
+      <Splitter Orientation="Vertical" RelativeBounds="50539;56433;3;43567">
+        <Controls Visuals="0" />
+        <Controls Visuals="3;6" Splitters="4" />
+      </Splitter>
+      <Splitter Orientation="Horizontal" RelativeBounds="50542;56430;49458;3">
+        <Controls Visuals="4" />
+        <Controls Visuals="3;5" Splitters="3" />
+      </Splitter>
+    </Splitters>
+    <Crosses>
+      <Cross H1="0" H2="6" V1="1" V2="5" />
+    </Crosses>
+  </PageConfiguration>
+  <FilterSettings>
+    <FilterSettingsForDataTable>
+      <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+      <RelatedRowsPropagations>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+        </RelatedRowsPropagation>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        </RelatedRowsPropagation>
+      </RelatedRowsPropagations>
+    </FilterSettingsForDataTable>
+    <FilterSettingsForDataTable>
+      <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+      <CheckBoxFilter>
+        <DataColumn v="2" Name="YEAR_LABEL" ExternalName="YEAR_LABEL" DataType="String" />
+        <UncheckedValues>2010_est_base;2010_Census</UncheckedValues>
+      </CheckBoxFilter>
+      <RelatedRowsPropagations>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        </RelatedRowsPropagation>
+      </RelatedRowsPropagations>
+    </FilterSettingsForDataTable>
+    <FilterSettingsForDataTable>
+      <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+      <RelatedRowsPropagations>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        </RelatedRowsPropagation>
+      </RelatedRowsPropagations>
+    </FilterSettingsForDataTable>
+    <FilterSettingsForDataTable>
+      <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+      <ItemFilter Value="2013">
+        <DataColumn v="2" Name="Year" ExternalName="Year" DataType="Integer" />
+      </ItemFilter>
+      <RelatedRowsPropagations>
+        <RelatedRowsPropagation Behavior="OnlyMatching">
+          <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+        </RelatedRowsPropagation>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        </RelatedRowsPropagation>
+        <RelatedRowsPropagation Behavior="Ignore">
+          <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+        </RelatedRowsPropagation>
+      </RelatedRowsPropagations>
+    </FilterSettingsForDataTable>
+    <FilterSettingsForDataTable>
+      <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+      <RelatedRowsPropagations>
+        <RelatedRowsPropagation Behavior="OnlyMatching">
+          <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        </RelatedRowsPropagation>
+      </RelatedRowsPropagations>
+    </FilterSettingsForDataTable>
+    <FilterSettingsForDataTable>
+      <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+      <RelatedRowsPropagations />
+    </FilterSettingsForDataTable>
+  </FilterSettings>
+  <FilterOrganization>
+    <TableGroup Style="Default">
+      <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+    </TableGroup>
+    <TableGroup Style="Default" Expanded="false">
+      <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+    </TableGroup>
+    <TableGroup Style="Default">
+      <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+    </TableGroup>
+    <TableGroup Expanded="false">
+      <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+      <Filter>
+        <DataColumn v="2" Name="CoC Number" ExternalName="CoC Number" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="County" ExternalName="County" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="State" ExternalName="State" ExternalIdentifier="9284fffe-33c6-452d-b57f-54af0828a842" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Year" ExternalName="Year" DataType="Integer" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Category" ExternalName="Category" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Beds" ExternalName="Beds" DataType="Integer" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Household Type" ExternalName="Household Type" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Shelter Type" ExternalName="Shelter Type" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Shelter Type Label" ExternalName="Shelter Type Label" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Beds_perCoC_perYear" DataType="Real" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Homeless_perCoC_perYear" ExternalName="Homeless_perCoC_perYear" DataType="Real" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Beds Surplus / Deficit" DataType="Real" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="StateAndCounty" DataType="String" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Bed Utilization Rate" DataType="Real" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Bed Utilization Rate by State" DataType="Real" />
+      </Filter>
+      <Filter>
+        <DataColumn v="2" Name="Bed Utilization Rate by County" DataType="Real" />
+      </Filter>
+    </TableGroup>
+    <TableGroup Style="Default" Expanded="false">
+      <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+    </TableGroup>
+    <TableGroup Style="Default">
+      <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+    </TableGroup>
+  </FilterOrganization>
+  <DataProperties />
+  <Markings>
+    <Marking>
+      <DataMarkingSelection Id="492ecfc6-5312-46ca-9e01-f988294794a7" Name="Marking" />
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+    </Marking>
+    <Marking>
+      <DataMarkingSelection Id="79ad94d8-fcf3-4fee-a161-e977f29efac6" Name="Marking (2)" />
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+    </Marking>
+    <Marking>
+      <DataMarkingSelection Id="2a56cf53-5846-481b-bcd1-6d37644e79e2" Name="Cross Table Marking" />
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+    </Marking>
+    <Marking>
+      <DataMarkingSelection Id="f7914ff3-40a2-4451-83d6-716f68e38bff" Name="Marking (4)" />
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA States" Id="c3849e6e-3fb2-4e8f-b796-9cb2e1115de0" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="Census.data" Id="1707d6a2-ff5e-45aa-867b-4572b6a07fe6" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Counties" Id="1930f380-604c-4efc-99cc-03326d28de22" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="HIC.Shelters" Id="7432d6c6-f3b1-4396-ab30-9afadc08fb57" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="PIT.PeopleAtRisk" Id="70796231-c56f-4530-8752-b1f2f182e6d1" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+      <Selection v="2" HashVersion="0" IndexSetCount="0">
+        <DataTable Name="USA Major Cities" Id="8e71353c-cb87-4b59-9067-1dd574863d27" />
+        <Selection>
+          <EmptySelection />
+        </Selection>
+      </Selection>
+    </Marking>
+  </Markings>
+</Bookmark>

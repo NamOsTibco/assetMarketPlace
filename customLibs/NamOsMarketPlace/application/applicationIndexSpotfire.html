@@ -1,0 +1,154 @@
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.navButton {
+			height : 50px;
+			width : 50px;
+		}
+		
+		.startButton {
+			background-color : #3b88c3 !important;
+		}
+		
+		.highlight {
+			color : #c76f76;
+			font-weight: bold;
+		}
+		
+	</style>
+	
+	<script>
+
+		function jsGoToPage(targetPage) {
+
+			var ScriptExecutionInfo = { "ScriptName": "goToPage", "Arguments":[{ "Key": "targetPage", "Value": targetPage }] };
+			Spotfire.modify ( "script", ScriptExecutionInfo );
+			
+		}
+
+	</script>
+
+
+    <!-- Navigation 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">My sample Application Title</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>-->
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-fluid rounded" src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/application/images/summary1.jpg" alt="">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>Business Problematic</h1>
+		  <br>
+          <p>Here explain what is your dashboard is about -- the business problem -- 
+			<br><br> The important questions are :
+				<ul>
+					<li>Do I have <font class="highlight">enough of that</font> ?</li>
+					<li>How can I <font class="highlight">improve</font> ?</li>
+					<li><font class="highlight">What if</font> I do that ?</li>
+				</ul>
+			</p>
+			<br>
+          <center><a style="color: white !important" class="btn btn-primary btn-lg startButton" 
+				onclick="javscript:jsGoToPage('Page 1');"/>Start Analyzing</a></center>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Call to Action Well -->
+      <div class="card text-white bg-secondary my-4 text-center">
+        <div class="card-body">
+          <p class="text-white m-0">Quote describing you business problematic</p>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Page 1 title</h2>
+              <p class="card-text">Explain the content of page 1, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod.</p>
+            </div>
+            <div class="card-footer">
+              <img class="navButton" src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/application/images/number-blueSquare-1.png" align="right"
+				onclick="javscript:jsGoToPage('Page 1');"/>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Page 2 title</h2>
+              <p class="card-text">Explain the content of page 2, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam.</p>
+            </div>
+            <div class="card-footer">
+              <img class="navButton" src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/application/images/number-blueSquare-2.png" align="right"
+				onclick="javscript:jsGoToPage('Page 2');"/>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title">Page 3 title</h2>
+              <p class="card-text">Explain the content of page 3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam.</p>
+            </div>
+            <div class="card-footer">
+              <img class="navButton" src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/application/images/number-blueSquare-3.png" align="right"
+				onclick="javscript:jsGoToPage('Page 3');"/>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer 
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>-->
+
+    <!-- Bootstrap core JavaScript -->
+    
+
+

@@ -1,0 +1,46 @@
+/*
+ Copyright (c) 2016 TIBCO Software Inc
+
+ THIS SOFTWARE IS PROVIDED BY TIBCO SOFTWARE INC. ''AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+ SHALL TIBCO SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#tooltip {
+    color: white;
+    opacity: .9;
+    background: #333;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+#circle circle {
+    fill: none;
+    pointer-events: all;
+}
+
+path.group {
+    fill-opacity: .8;
+}
+
+path.chord {
+    fill-opacity: .8;
+    stroke: #000;
+    stroke-width: .25px;
+}
+
+#circle:hover path.fade {
+    display: none;
+}

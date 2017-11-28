@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+	<title>VisTimeLine</title>
+</head>
+
+<body>
+    <script>var proClient = true;</script>
+
+    <!--
+      Place JS and CSS Includes here - uncomment as required
+     -->
+
+    
+	<script type="text/javascript" src="../../externalLibs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../externalLibs/jsviz/lib/JSViz/Introspection.js"></script>
+	 
+
+    <!--
+      Place JS and CSS for chart being tested here - uncomment as required
+     -->
+
+    
+    <link rel="stylesheet" href="../../externalLibs/visjs/vis-timeline-graph2d.min.css"  >
+	<link rel="stylesheet" href="visTimeline.css">
+	
+	<script type="text/javascript" src="../../externalLibs/visjs/vis.js"></script>
+	<script type="text/javascript" src="namosVisTimeline.js"></script>
+	
+
+	<script type="text/javascript" src="../../externalLibs/jsviz/lib/JSViz/JSViz.js"></script>
+	 
+
+    <!--
+      This button mimics the call to the renderCore method.
+     -->
+
+    <br>
+
+    <button type="button" onclick="call_renderCore()">Call renderCoreXX</button>
+	
+	<button type="button" onclick="drawGraph()">Draw Graph</button>
+
+     <!--
+      This text area is to assist with debugging
+      Use the Introspection routines to display object details in this box
+	 -->
+
+    <br>
+    <textarea id="ta1" rows="20" cols="100"></textarea>
+
+    <!--
+      This <DIV> mimics the one created by the JS Visualization Plugin
+	  
+	  
+     -->
+ <div style=' width: 100%; height: 10px;' onmousedown= 'if (typeof mark === "undefined") {} else {mark(event)}' id="js_chart" />
+	
+	
+	
+	
+    <script>
+    function call_renderCore()
+    {
+	
+		
+	
+		
+		console.log("OK");
+        /*
+        Paste in the JSON data copied to the clipboard from within your JS Visualization instance
+	     */
+
+        var sfdata = {"columns":["start","end","eventType","desc"],"baseTableHints":{ "rows":9, "visible":9, "marked":0, "tableName":"events", "settingName":"events"},"data":[{"items":["\/Date(1500829200000)\/","\/Date(-62135568000000)\/","type1","Conversation"], "hints":{"index": 0 }}, {"items":["\/Date(1500876000000)\/","\/Date(-62135568000000)\/","type2","Mail received"], "hints":{"index": 1 }}, {"items":["\/Date(1500937200000)\/","\/Date(-62135568000000)\/","type3","Report"], "hints":{"index": 2 }}, {"items":["\/Date(1501088400000)\/","\/Date(1501693200000)\/","type4","Traject A"], "hints":{"index": 3 }}, {"items":["\/Date(1501261200000)\/","\/Date(-62135568000000)\/","type5"," Memo"], "hints":{"index": 4 }}, {"items":["\/Date(1501347600000)\/","\/Date(-62135568000000)\/","type6"," Phone Call"], "hints":{"index": 5 }}, {"items":["\/Date(1501520400000)\/","\/Date(1501779600000)\/","type7"," Traject B"], "hints":{"index": 6 }}, {"items":["\/Date(1501866000000)\/","\/Date(-62135568000000)\/","type8"," Report"], "hints":{"index": 7 }}],"additionalTables":[],"user":"spotfire","static":false,"wait":0,"runtime":{},"legend":true, "config": {},"style":"font-family:\"Arial\",sans-serif;font-size:11px;font-style:Normal;font-weight:Normal;color:#000000;background-color:transparent;border-style:None;border-top-color:#FFFFFF;border-right-color:#FFFFFF;border-bottom-color:#FFFFFF;border-left-color:#FFFFFF;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;"};
+
+	
+		
+	
+		
+		
+        renderCore ( sfdata );
+
+        display_data ( sfdata );
+    }
+
+    function display_data ( sfdata )
+    {
+        if (typeof introspect == 'function') {
+            document.getElementById("ta1").innerText = introspect ( "Data: \n\n", sfdata );
+        }
+    }
+	
+	call_renderCore();
+</script>
+</body>

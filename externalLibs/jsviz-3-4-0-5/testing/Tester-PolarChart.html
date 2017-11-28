@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+	<title>Highcharts Polar Chart Tester</title>
+</head>
+
+<body>
+    <script>var proClient = true;</script>
+
+    <!--
+      Place JS and CSS Includes here - uncomment as required
+     -->
+
+	<script type="text/javascript" src="http://localhost/jsviz/lib/jQuery/jQuery.js"></script>
+    <!--
+	<script type="text/javascript" src="http://localhost/jsviz/lib/d3/d3.v3.min.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/JSViz/Introspection.js"></script>
+	 -->
+	<script type="text/javascript" src="http://localhost/jsviz/lib/highcharts/js/highcharts.src.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/highcharts/js/highcharts-more.src.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/highcharts/js/modules/exporting.src.js"></script>
+
+    <!--
+      Place JS and CSS for chart being tested here - uncomment as required
+     -->
+
+    <!--
+    <link   type="text/css"       href="http://localhost/jsviz/src/css/<MyChart>.css" rel="stylesheet" >
+	 -->
+	<script type="text/javascript" src="http://localhost/jsviz/src/js/PolarChart.js"></script>
+	<script type="text/javascript" src="http://localhost/jsviz/lib/JSViz/JSViz.js"></script>
+
+    <!--
+      This button mimics the call to the renderCore method.
+     -->
+
+    <br>
+    <button onclick="call_renderCore()">Call renderCore()</button>
+
+     <!--
+      This text area is to assist with debugging
+      Use the Introspection routines to display object details in this box
+	 -->
+
+    <br>
+    <textarea id="ta1" rows="20" cols="100"></textarea>
+
+    <!--
+      This <DIV> mimics the one created by the JS Visualization Plugin
+     -->
+
+    <div style='position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;' onmousedown= 'if (typeof mark === "undefined") {} else {mark(event)}' id="js_chart" />
+
+    <script>
+    function call_renderCore()
+    {
+        /*
+        Paste in the JSON data copied to the clipboard from within your JS Visualization instance
+	     */
+
+	    var sfdata = {"columns":["First([Set])","Sum([Sales])","Sum([Marketing])","Sum([Development])","Sum([Customer Support])","Sum([Information Technology])","Sum([Administration])"],"baseTableHints":{ "rows":2, "visible":2, "marked":0, "tableName":"PolarChart", "settingName":"PolarChart"},"data":[{"items":["Budget",50000,39000,42000,31000,26000,14000], "hints":{"index": 0 }}, {"items":["Spending",43000,19000,60000,35000,17000,10000], "hints":{"index": 1 }}],"additionalTables":[],"user":"spotfireadmin","static":false,"wait":0,"runtime":{},"legend":true, "config": {}}
+
+        renderCore ( sfdata );
+
+        display_data ( sfdata );
+    }
+
+    function display_data ( sfdata )
+    {
+        if (typeof introspect == 'function') {
+            document.getElementById("ta1").innerText = introspect ( "Data: \n\n", sfdata );
+        }
+    }
+</script>
+</body>

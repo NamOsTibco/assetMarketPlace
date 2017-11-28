@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<FileMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DocumentType="Analysis" SchemaVersion="1.0" CompatibilityVersion="7.0">
+  <Contents>
+    <Property ArchiveElementType="AnalysisDocument" Version="7.0" ArchiveElementPath="AnalysisDocument.xml" />
+    <Property ArchiveElementType="EmbeddedResources" Version="7.0" ArchiveElementPath="EmbeddedResources.xml" />
+  </Contents>
+  <Properties>
+    <Property Key="SavedByAssemblyFileVersion" Value="18.10.8922.3801" />
+  </Properties>
+</FileMetadata>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package SchemaVersion="2.0" Name="JSViz Forms Package" Version="3.4.0.5" LastModified="2017-02-20T15:14:16.4048978Z" SeriesId="25e58af4-6634-4d86-98e2-4ec2f6a8e0df" InstanceId="2c236abf-68c1-4b15-8531-1d961bde31a4" CabinetName="JSViz Forms Package.cab" Type="Module">
+  <Files>
+    <File TargetRelativePath="Libs\SciLexer.dll" LastModifiedDate="2015-08-04T11:57:41.4862048Z" />
+    <File TargetRelativePath="Libs\SciLexer64.dll" LastModifiedDate="2015-08-04T11:57:41.4550098Z" />
+  </Files>
+  <Assemblies>
+    <Assembly TargetRelativePath="Libs\ScintillaNET.dll" LastModifiedDate="2015-08-04T11:57:41.4706073Z" AssemblyFullName="ScintillaNET, Version=2.5.2.0, Culture=neutral, PublicKeyToken=948d6c9751444115" AssemblyFileVersion="2.5.2.0" AssemblyInformationalVersion="2.5.2.0">
+      <Reference AssemblyFullName="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Licenses />
+      <AddIns />
+    </Assembly>
+    <Assembly TargetRelativePath="SpotfirePS.Framework.JSVisualizationForms.dll" LastModifiedDate="2017-02-20T15:14:13.745Z" AssemblyFullName="SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" AssemblyFileVersion="" AssemblyInformationalVersion="" AssemblyCompatibilityMinVersion="1.0.0.0" AssemblyCompatibilityMaxVersion="#.#.*.*">
+      <Reference AssemblyFullName="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="Spotfire.Dxp.Application, Version=23.28.9701.4854, Culture=neutral, PublicKeyToken=789861576bd64dc5" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="Spotfire.Dxp.Framework, Version=23.28.9701.4854, Culture=neutral, PublicKeyToken=789861576bd64dc5" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="Spotfire.Dxp.Data, Version=23.28.9701.4854, Culture=neutral, PublicKeyToken=789861576bd64dc5" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="SpotfirePS.Framework.JSVisualization, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="ScintillaNET, Version=2.5.2.0, Culture=neutral, PublicKeyToken=948d6c9751444115" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" IsReferencedAssemblyInGAC="false" />
+      <Reference AssemblyFullName="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="SpotfirePS.LoggingUtil, Version=3.4.0.5, Culture=neutral, PublicKeyToken=d140993ef944b7fd" IsReferencedAssemblyInGAC="false" />
+      <Licenses />
+      <AddIns>
+        <AddIn FullTypeName="SpotfirePS.Framework.JSVisualizationForms.JSVisualizationFormsAddIn, SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" />
+      </AddIns>
+    </Assembly>
+    <Assembly TargetRelativePath="Newtonsoft.Json.dll" LastModifiedDate="2015-10-06T11:59:58.6287974Z" AssemblyFullName="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" AssemblyFileVersion="7.0.1.18622" AssemblyInformationalVersion="">
+      <Reference AssemblyFullName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Reference AssemblyFullName="System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsReferencedAssemblyInGAC="true" />
+      <Licenses />
+      <AddIns />
+    </Assembly>
+  </Assemblies>
+  <ClientModule>
+    <id>25e58af4-6634-4d86-98e2-4ec2f6a8e0df</id>
+    <name>JSViz Forms Package</name>
+    <version>3.4.0.5</version>
+    <intendedClient>Forms</intendedClient>
+    <assemblies>
+      <assembly>
+        <fullname>ScintillaNET, Version=2.5.2.0, Culture=neutral, PublicKeyToken=948d6c9751444115</fullname>
+        <codebase>Libs\ScintillaNET.dll</codebase>
+        <compatibility>
+          <min-version>2.5.2.0</min-version>
+          <max-version>2.5.2.0</max-version>
+        </compatibility>
+      </assembly>
+      <assembly>
+        <fullname>SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513</fullname>
+        <codebase>SpotfirePS.Framework.JSVisualizationForms.dll</codebase>
+        <compatibility>
+          <min-version>1.0.0.0</min-version>
+          <max-version>#.#.*.*</max-version>
+        </compatibility>
+      </assembly>
+      <assembly>
+        <fullname>Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed</fullname>
+        <codebase>Newtonsoft.Json.dll</codebase>
+        <compatibility>
+          <min-version>7.0.0.0</min-version>
+          <max-version>7.0.0.0</max-version>
+        </compatibility>
+      </assembly>
+    </assemblies>
+    <extensions>
+      <addIn fullTypeName="SpotfirePS.Framework.JSVisualizationForms.JSVisualizationFormsAddIn, SpotfirePS.Framework.JSVisualizationForms, Version=3.4.0.5, Culture=neutral, PublicKeyToken=4d233badaf236513" />
+    </extensions>
+    <resources>
+      <publicResource name="SpotfirePS.Framework.JSVisualizationForms.Scilexer" relativePath="Libs\SciLexer.dll" />
+      <publicResource name="SpotfirePS.Framework.JSVisualizationForms.Scilexer64" relativePath="Libs\SciLexer64.dll" />
+    </resources>
+  </ClientModule>
+</Package>

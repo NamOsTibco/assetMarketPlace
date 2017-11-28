@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+	<title>VisTimeLine</title>
+</head>
+
+<body>
+    <script>var proClient = true;</script>
+
+    <!--
+      Place JS and CSS Includes here - uncomment as required
+     -->
+
+    
+	<script type="text/javascript" src="../../externalLibs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../externalLibs/platform.js-master/platform.js"></script>
+	<script type="text/javascript" src="../../externalLibs/jsviz/lib/JSViz/Introspection.js"></script>
+	 
+
+    <!--
+      Place JS and CSS for chart being tested here - uncomment as required
+     -->
+
+    
+    <link rel="stylesheet" href="../../externalLibs/visjs/vis-timeline-graph2d.min.css"  >
+	<link rel="stylesheet" href="visTimeline.css">
+	
+	<script type="text/javascript" src="../../externalLibs/visjs/vis.js"></script>
+	<script type="text/javascript" src="namosVisTimelineGroup.js"></script>
+	
+
+	<script type="text/javascript" src="../../externalLibs/jsviz/lib/JSViz/JSViz.js"></script>
+	
+<!--	<script type="text/javascript" src="../../externalLibs/bower-material-master/angular-material.min.css"></script>
+	<script type="text/javascript" src="../../externalLibs/bower-material-master/angular-material.min.js"></script> -->
+	 
+
+    <!--
+      This button mimics the call to the renderCore method.
+     -->
+
+    <br>
+
+    <button type="button" onclick="call_renderCore()">Call renderCoreXX</button>
+	
+	<button type="button" onclick="drawGraph()">Draw Graph</button>
+
+     <!--
+      This text area is to assist with debugging
+      Use the Introspection routines to display object details in this box
+	 -->
+
+    <br>
+    <textarea id="ta1" rows="20" cols="100"></textarea>
+
+    <!--
+      This <DIV> mimics the one created by the JS Visualization Plugin
+	  
+	  
+     -->
+ <div style=' width: 100%; height: 10px;' onmousedown= 'if (typeof mark === "undefined") {} else {mark(event)}' id="js_chart" />
+	
+	
+	
+	
+    <script>
+    function call_renderCore()
+    {
+	
+		
+	
+		
+		console.log("OK");
+        /*
+        Paste in the JSON data copied to the clipboard from within your JS Visualization instance
+	     */
+
+        var sfdata = {"columns":["parentType","parentId","start","end","eventType","desc","singleEvent"], "pageDataRows":false, "pageRowSize":10000,"baseTableHints":{ "rows":11, "visible":11, "marked":0, "tableName":"eventsGroup", "settingName":"eventsGroup"},"data":[{"items":["Case",28081,"\/Date(1503935221572)\/","\/Date(1503935221572)\/","CASE_STARTER","Enter Customer Onboarding Data",true], "hints":{"index": 0 }}, {"items":["Case",28081,"\/Date(1503935221584)\/","\/Date(1503935359367)\/","CASE_PHASE","Customer Onboarding Case Created",false], "hints":{"index": 1 }}, {"items":["Case",28081,"\/Date(1503935251171)\/","\/Date(1503935251171)\/","CASE_ACTION","Enter Customer Data",true], "hints":{"index": 2 }}, {"items":["Case",28081,"\/Date(1503935251180)\/","\/Date(1503935251180)\/","CASE_PHASE_UPDATE","Documents Upload",true], "hints":{"index": 3 }}, {"items":["Case",28081,"\/Date(1503935282000)\/","\/Date(1503935313389)\/","CASE_ACTION","Documents Check",true], "hints":{"index": 4 }}, {"items":["Case",28081,"\/Date(1503935282000)\/","\/Date(1503935313389)\/","CASE_WORKITEM","Documents Check",false], "hints":{"index": 5 }}, {"items":["Case",28081,"\/Date(1503935313389)\/","\/Date(1503935313389)\/","CASE_PHASE_UPDATE","Documents Check",true], "hints":{"index": 6 }}, {"items":["Case",28081,"\/Date(1503935328445)\/","\/Date(1503935328445)\/","CASE_ACTION","Check Documents",true], "hints":{"index": 7 }}, {"items":["Case",28081,"\/Date(1503935328467)\/","\/Date(1503935328467)\/","CASE_PHASE_UPDATE","Validation",true], "hints":{"index": 8 }}, {"items":["Case",28081,"\/Date(1503935359344)\/","\/Date(1503935359344)\/","CASE_ACTION","Finalize Onboarding",true], "hints":{"index": 9 }}, {"items":["Case",28081,"\/Date(1503935359367)\/","\/Date(1503935359367)\/","CASE_END","Onboarded",true], "hints":{"index": 10 }}],"additionalTables":[],"user":"spotfire","static":false,"wait":0,"runtime":{},"legend":true, "config": {},"style":"font-family:\"Arial\",sans-serif;font-size:11px;font-style:Normal;font-weight:Normal;color:#000000;background-color:transparent;border-style:None;border-top-color:#FFFFFF;border-right-color:#FFFFFF;border-bottom-color:#FFFFFF;border-left-color:#FFFFFF;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;"};
+
+	
+		
+	
+		
+		
+        renderCore ( sfdata );
+
+        display_data ( sfdata );
+    }
+
+    function display_data ( sfdata )
+    {
+        if (typeof introspect == 'function') {
+            document.getElementById("ta1").innerText = introspect ( "Data: \n\n", sfdata );
+        }
+    }
+	
+	call_renderCore();
+</script>
+</body>

@@ -1,0 +1,214 @@
+
+<script>
+		
+</script>
+
+<div class="container" ng-app ng-controller="assetController" >
+	<!--Menu -->
+	<div class="search-menu" align="center">
+		
+			<img  ng-cloak ng-repeat="category in assetCategories"
+				 ng-click="modifySearch(category)"
+				 class="categoryImage my-tooltip"
+				 data-toggle="tooltip" title="{{category}}" data-placement="bottom"
+				 src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/images/cat-{{category}}.png"/>
+		
+	</div>
+	
+	<!--Menu -->
+	<div class="search-menu" align="center">
+			
+			
+			<input ng-model="searchText">
+		
+	</div>
+	
+</br>
+
+
+    <div class="column">
+	<!-- Begin card-container -->
+      <div class="card-container manual-flip" ng-repeat="curAsset in assets | filter:searchText" ng-cloak>
+                <div class="card">
+                    <div class="front">
+                        <div class="cover {{curAsset.Category}}">
+						
+                            <img src="https://s3-eu-west-1.amazonaws.com/asset-market-place-repo/categories/cat-{{curAsset.Category}}.png"/>
+                        </div>
+                        <div class="user {{curAsset.category}}-dark">
+                            <img class="img-circle {{curAsset.category}}-border" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-repo/assets/{{curAsset.caseReference}}/{{curAsset.Icon}}"/>
+                        </div>
+                        <div class="content" style="margin-top : -50px;">
+                            <div class="main">
+                                <h3 class="name">{{curAsset.Name}}     </h3>
+                                <p class="profession">{{curAsset.Subcategory}}</p>
+                                <p class="text-center">{{curAsset.Description}}</p>
+                            </div>
+							
+							<div>
+								<div class="col-sm-4 "> </div>
+								<div class="col-sm-2 footer">
+									<button class="btn btn-simple {{curAsset.Category}}" onclick="rotateCard(this)">
+										<i class="fa fa-mail-forward"></i> Details
+									</button>
+								</div>
+								<div class="col-sm-2 footer">
+									<button class="btn btn-simple {{curAsset.Category}}-accent" ng-click="ngExecute(curAsset)">
+										<i class="fa fa-mail-forward"></i> Execute
+									</button>
+								</div>
+								<div class="col-sm-4 " align="right"><img ng-repeat="in in getNumber(curAsset.Like)" class="likeImage" src="http://localhost:8888/spotfireFramework/customLibs/NamOsMarketPlace/images/like.png"/></div>
+							</div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">{{curAsset.Name}}</h4>	
+                                <p class="text-center">{{curAsset.Description}}</p>
+								<div align="center">
+									
+										<img class="descImage" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-repo/assets/{{curAsset.caseReference}}/{{curAsset.ImageDesc}}"/>
+									
+									
+								</div>
+								</br>
+								
+								
+								<center><button class="btn {{curAsset.Category}}" ng-click="ngExecute(curAsset)">
+									<i class="fa fa-reply"></i> Execute 
+								</button></center>
+								<div class="stats-container">
+                                    <div class="stats">
+                                        <h4>0</h4>
+                                        <p>
+                                            Followers
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>{{curAsset.Like}}</h4>
+                                        <p>
+                                            Likes
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>0</h4>
+                                        <p>
+                                            Comments
+                                        </p>
+                                    </div>
+                                </div>
+							
+                               
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple {{curAsset.Category}}" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+							
+                            
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+			<!-- end card-container -->
+			
+	<!-- Begin card-container
+       <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="../../externalLibs/rotating-card-1-4/images/rotating_card_thumb2.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="../../externalLibs/rotating-card-1-4/images/rotating_card_profile3.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">John Marvel</h3>
+                                <p class="profession">CEO</p>
+                                <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Rotation
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Job Description</h4>
+                                <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                <div class="stats-container">
+                                    <div class="stats">
+                                        <h4>235</h4>
+                                        <p>
+                                            Followers
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>114</h4>
+                                        <p>
+                                            Following
+                                        </p>
+                                    </div>
+                                    <div class="stats">
+                                        <h4>35</h4>
+                                        <p>
+                                            Projects
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="http://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+			end card-container -->
+			
+			
+			
+    </div> <!-- end row -->
+    <div class="space-200"></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+
+    });
+
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+			$card.removeClass('card-container-back');
+			console.log("go to FRONT CARD");
+            $card.removeClass('hover');
+			
+        } else {
+			console.log("go to BACK CARD");
+            $card.addClass('hover');
+			$card.addClass('card-container-back');
+        }
+    }
+</script>
+

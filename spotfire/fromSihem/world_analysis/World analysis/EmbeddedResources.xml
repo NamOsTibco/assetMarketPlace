@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<EmbeddedResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="1.0">
+  <EmbeddedResource Id="0" ArchiveElementPath="EmbeddedResources/0.emb" Name="DataBufferCache" />
+  <EmbeddedResource Id="1" ArchiveElementPath="EmbeddedResources/1.emb" Name="Marking" />
+  <EmbeddedResource Id="2" ArchiveElementPath="EmbeddedResources/2.emb" Name="EmbeddedBinaryData" />
+  <EmbeddedResource Id="3" ArchiveElementPath="EmbeddedResources/3.emb" Name="3f3cf9bc688b4705a0a4d86338bbced5.png" />
+  <EmbeddedResource Id="4" ArchiveElementPath="EmbeddedResources/4.emb" Name="4fd6728a2c14483bab1f5628a0b548d0.png" />
+  <EmbeddedResource Id="5" ArchiveElementPath="EmbeddedResources/5.emb" Name="09687f4b735a4a968a3c89f9b40a81cd.png" />
+  <EmbeddedResource Id="6" ArchiveElementPath="EmbeddedResources/6.emb" Name="3a24ef5d59ae4d8a919424d3cc2a0e5c.png" />
+  <EmbeddedResource Id="7" ArchiveElementPath="EmbeddedResources/7.emb" Name="c5e86850f6fe4e2981510ffed980a212.png" />
+  <EmbeddedResource Id="8" ArchiveElementPath="EmbeddedResources/8.emb" Name="3f43cd0a01a4493f8de54b7c03d632f6.png" />
+  <EmbeddedResource Id="9" ArchiveElementPath="EmbeddedResources/9.emb" Name="974054aeb88b4792bd34590fd60dc865.png" />
+  <EmbeddedResource Id="10" ArchiveElementPath="EmbeddedResources/10.emb" Name="7802282c7e344ec88e4a6493530683ef.png" />
+  <EmbeddedResource Id="11" ArchiveElementPath="EmbeddedResources/11.emb" Name="3a088b71da804346b5c7dd215d24f973.png" />
+  <EmbeddedResource Id="12" ArchiveElementPath="EmbeddedResources/12.emb" Name="afefc10d931347abb34087135ee14b72.png" />
+  <EmbeddedResource Id="13" ArchiveElementPath="EmbeddedResources/13.emb" Name="a06b2a59ec4e4afe87a68a036f28200c.png" />
+  <EmbeddedResource Id="14" ArchiveElementPath="EmbeddedResources/14.emb" Name="EmbeddedScripts.xml" />
+  <EmbeddedResource Id="15" ArchiveElementPath="EmbeddedResources/15.emb" Name="CustomStyles.json" />
+</EmbeddedResources>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<FileMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DocumentType="Analysis" SchemaVersion="1.0" CompatibilityVersion="2.6 Cloud;7.0">
+  <Contents>
+    <Property ArchiveElementType="AnalysisDocument" Version="2.6 Cloud" ArchiveElementPath="AnalysisDocument.xml" />
+    <Property ArchiveElementType="AnalysisDocument" Version="7.0" ArchiveElementPath="7.0-AnalysisDocument.xml" />
+    <Property ArchiveElementType="EmbeddedResources" Version="2.6 Cloud;7.0" ArchiveElementPath="EmbeddedResources.xml" />
+  </Contents>
+  <Properties>
+    <Property Key="SavedByAssemblyFileVersion" Value="24.3.9717.5376" />
+    <Property Key="EmbeddedDataFormatVersion" Value="2" />
+  </Properties>
+</FileMetadata>

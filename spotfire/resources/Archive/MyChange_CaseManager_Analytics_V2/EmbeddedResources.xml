@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<EmbeddedResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="1.0">
+  <EmbeddedResource Id="0" ArchiveElementPath="EmbeddedResources/0.emb" Name="DataBufferCache" />
+  <EmbeddedResource Id="1" ArchiveElementPath="EmbeddedResources/1.emb" Name="Marking" />
+  <EmbeddedResource Id="2" ArchiveElementPath="EmbeddedResources/2.emb" Name="Case Type" />
+  <EmbeddedResource Id="3" ArchiveElementPath="EmbeddedResources/3.emb" Name="Case State" />
+  <EmbeddedResource Id="4" ArchiveElementPath="EmbeddedResources/4.emb" Name="Case" />
+  <EmbeddedResource Id="5" ArchiveElementPath="EmbeddedResources/5.emb" Name="Marking (2)" />
+  <EmbeddedResource Id="6" ArchiveElementPath="EmbeddedResources/6.emb" Name="Marking (3)" />
+  <EmbeddedResource Id="7" ArchiveElementPath="EmbeddedResources/7.emb" Name="CaseWithSLA" />
+  <EmbeddedResource Id="8" ArchiveElementPath="EmbeddedResources/8.emb" Name="Marking (4)" />
+  <EmbeddedResource Id="9" ArchiveElementPath="EmbeddedResources/9.emb" Name="Marking (5)" />
+  <EmbeddedResource Id="10" ArchiveElementPath="EmbeddedResources/10.emb" Name="Marking (6)" />
+  <EmbeddedResource Id="11" ArchiveElementPath="EmbeddedResources/11.emb" Name="Marking (7)" />
+  <EmbeddedResource Id="12" ArchiveElementPath="EmbeddedResources/12.emb" Name="PR1" />
+  <EmbeddedResource Id="13" ArchiveElementPath="EmbeddedResources/13.emb" Name="PR2" />
+  <EmbeddedResource Id="14" ArchiveElementPath="EmbeddedResources/14.emb" Name="PRSelected" />
+  <EmbeddedResource Id="15" ArchiveElementPath="EmbeddedResources/15.emb" Name="CR1" />
+  <EmbeddedResource Id="16" ArchiveElementPath="EmbeddedResources/16.emb" Name="CR2" />
+  <EmbeddedResource Id="17" ArchiveElementPath="EmbeddedResources/17.emb" Name="CRSelected" />
+  <EmbeddedResource Id="18" ArchiveElementPath="EmbeddedResources/18.emb" Name="Marking (8)" />
+  <EmbeddedResource Id="19" ArchiveElementPath="EmbeddedResources/19.emb" Name="Network Graph" />
+  <EmbeddedResource Id="20" ArchiveElementPath="EmbeddedResources/20.emb" Name="Node" />
+  <EmbeddedResource Id="21" ArchiveElementPath="EmbeddedResources/21.emb" Name="Network Graph (2)" />
+  <EmbeddedResource Id="22" ArchiveElementPath="EmbeddedResources/22.emb" Name="EmbeddedBinaryData" />
+  <EmbeddedResource Id="23" ArchiveElementPath="EmbeddedResources/23.emb" Name="EmbeddedScripts.xml" />
+  <EmbeddedResource Id="24" ArchiveElementPath="EmbeddedResources/24.emb" Name="CustomStyles.json" />
+</EmbeddedResources>

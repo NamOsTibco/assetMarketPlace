@@ -1,0 +1,4 @@
+var color = null;
+var pie = null;
+var svg = null;
+var path = null;
