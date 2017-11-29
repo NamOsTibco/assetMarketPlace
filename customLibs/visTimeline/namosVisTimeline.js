@@ -47,7 +47,7 @@ function renderCore(sfdata){
 			curEventValue.end = curEvent[1];
 		}
 		
-		curEventValue.content = '<div>' + curEvent[3] +'</div><img  onerror="this.style.display=' + "'none'" + '" src="http://localhost:8888/spotfireFramework/customLibs/visTimeline/images/' + curEvent[2] + '.png" style="width:48px; height:48px;">';
+		curEventValue.content = '<div>' + curEvent[3] +'</div><img  onerror="this.style.display=' + "'none'" + '" src="https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/visTimeline/images/' + curEvent[2] + '.png" style="width:48px; height:48px;">';
 		
 		
 		myEvents.push(curEventValue);
