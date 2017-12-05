@@ -8,7 +8,7 @@ function renderCore(sfdata){
 	console.log("££££££££££££££££ " + platform);
 	console.log("£££££££££££££££SSSSS£ ");
 	
-	var imagePath = "http://localhost:8888/spotfireFramework/customLibs/visTimeline/images";
+	var imagePath = "https://s3-eu-west-1.amazonaws.com/asset-market-place-sources/customLibs/visTimeline/images";
 	
 	
 
