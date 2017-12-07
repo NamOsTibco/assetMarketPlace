@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>f0faf140-bd4c-482b-b8d7-fd56a16cf540</id>
+  <name>JSViz Logging Package</name>
+  <version>3.4.0.10</version>
+  <intendedClient>Forms</intendedClient>
+  <assemblies>
+    <assembly>
+      <fullname>SpotfirePS.LoggingUtil, Version=3.4.0.10, Culture=neutral, PublicKeyToken=d140993ef944b7fd</fullname>
+      <codebase>SpotfirePS.LoggingUtil.dll</codebase>
+      <compatibility>
+        <min-version>1.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+</module>

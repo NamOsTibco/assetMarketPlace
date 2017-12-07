@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+  <id>cc42d03e-0082-4ce0-8e95-1c6580e1203f</id>
+  <name>Spotfire.AssetMarketPlace</name>
+  <version>1.0.0.0</version>
+  <intendedClient>Forms</intendedClient>
+  <assemblies>
+    <assembly>
+      <fullname>Spotfire.AssetMarketPlace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5938c3ff7f78ea6b</fullname>
+      <codebase>Spotfire.AssetMarketPlace.dll</codebase>
+      <compatibility>
+        <min-version>0.0.0.0</min-version>
+        <max-version>#.#.*.*</max-version>
+      </compatibility>
+    </assembly>
+  </assemblies>
+  <extensions>
+    <addIn fullTypeName="Spotfire.AssetMarketPlace.AssetMarketPlaceAddIn, Spotfire.AssetMarketPlace, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5938c3ff7f78ea6b" />
+  </extensions>
+</module>

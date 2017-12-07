@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\bsoulere\Desktop\Spotfire SDK\TIB_sfire_dev_7.9.0_win\SDK\Starter\Spotfire.Dxp.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>C:\temp\JsViz\JSViz Core Package_3.4.0.10\;C:\temp\JsViz\JSViz Forms Package_3.4.0.10\Libs\;C:\temp\JsViz\JSViz Forms Package_3.4.0.10\;C:\temp\JsViz\JSViz Logging Package_3.4.0.10\;C:\Users\bsoulere\Desktop\Spotfire SDK\TIB_sfire_dev_7.9.0_win\SDK\Binaries\</ReferencePath>
+  </PropertyGroup>
+</Project>

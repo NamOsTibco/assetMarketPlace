@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pbp:PackageBuilderProject SchemaVersion="1.1" Id="25e58af4-6634-4d86-98e2-4ec2f6a8e0df" Name="JSViz Forms Package" Version="3.4.0.10" IntendedClient="Forms" xmlns:pbp="http://spotfire.tibco.com/PackageBuilderProject.xsd">
+  <pbp:ModuleFile RelativePath="module.xml" UpdateAutomatically="true" />
+  <pbp:BuildFolder RelativePath="" />
+  <pbp:Files>
+    <pbp:File RelativePath="module1.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfireExtensionProject1.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Libs\SciLexer.dll" Included="true" ExtensionAssembly="false" ResourceName="SpotfirePS.Framework.JSVisualizationForms.Scilexer" ResourceCulture="" />
+    <pbp:File RelativePath="Libs\SciLexer64.dll" Included="true" ExtensionAssembly="false" ResourceName="SpotfirePS.Framework.JSVisualizationForms.Scilexer64" ResourceCulture="" />
+    <pbp:File RelativePath="Libs\ScintillaNET.dll" Included="true" ExtensionAssembly="true" />
+    <pbp:File RelativePath="module.xml" Included="true" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Newtonsoft.Json.dll" Included="true" ExtensionAssembly="true" />
+    <pbp:File RelativePath="SpotfirePS.Framework.JSVisualizationForms.dll" Included="true" ExtensionAssembly="true" />
+  </pbp:Files>
+</pbp:PackageBuilderProject>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pbp:PackageBuilderProject SchemaVersion="1.1" Id="f0faf140-bd4c-482b-b8d7-fd56a16cf540" Name="JSViz Logging Package" Version="3.4.0.10" IntendedClient="Forms" xmlns:pbp="http://spotfire.tibco.com/PackageBuilderProject.xsd">
+  <pbp:ModuleFile RelativePath="module.xml" UpdateAutomatically="true" />
+  <pbp:BuildFolder RelativePath="" />
+  <pbp:Files>
+    <pbp:File RelativePath="module.xml" Included="true" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfirePS.LoggingUtil.dll" Included="true" ExtensionAssembly="true" />
+  </pbp:Files>
+</pbp:PackageBuilderProject>

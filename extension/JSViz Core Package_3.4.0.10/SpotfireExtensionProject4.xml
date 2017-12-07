@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pbp:PackageBuilderProject SchemaVersion="1.1" Id="c9a420d5-2a6e-4a29-8f07-839b24fcfc57" Name="JSViz Core Package" Version="3.4.0.10" IntendedClient="Forms" xmlns:pbp="http://spotfire.tibco.com/PackageBuilderProject.xsd">
+  <pbp:ModuleFile RelativePath="module.xml" UpdateAutomatically="true" />
+  <pbp:BuildFolder RelativePath="" />
+  <pbp:Files>
+    <pbp:File RelativePath="SpotfireExtensionProject1.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfireExtensionProject2.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="SpotfireExtensionProject3.xml" Included="false" ExtensionAssembly="false" />
+    <pbp:File RelativePath="module.xml" Included="true" ExtensionAssembly="false" />
+    <pbp:File RelativePath="Newtonsoft.Json.dll" Included="true" ExtensionAssembly="true" />
+    <pbp:File RelativePath="SpotfirePS.Framework.JSVisualization.dll" Included="true" ExtensionAssembly="true" />
+  </pbp:Files>
+</pbp:PackageBuilderProject>
